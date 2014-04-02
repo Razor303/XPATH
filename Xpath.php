@@ -1,22 +1,24 @@
 <?php
 
 /*
-	XPATH - A simple wrapper for using Xpath the DOMDocument and DOMXpath classes in php. 
 
-		Copyright © 2013 Nate Wiley
+	XPATH - A simple wrapper for using Xpath with the DOMDocument and DOMXpath classes in php. 
 
-		This program is free software: you can redistribute it and/or modify
-		it under the terms of the GNU General Public License as published by
-		the Free Software Foundation, either version 3 of the License, or any 
-		later version.
+	Copyright © 2013 Nate Wiley
 
-		This program is distributed in the hope that it will be useful,
-		but WITHOUT ANY WARRANTY; without even the implied warranty of
-		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-		GNU General Public License for more details.
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or any 
+	later version.
 
-		You should have received a copy of the GNU General Public License
-		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 */ 
 
 class XPATH {
@@ -49,9 +51,9 @@ class XPATH {
 	// pass in the result returned from query() .. 
 
 	public function preview($results){
-	echo "<pre>";
-	print_r($results);
-	echo "<br>Node Values <br>";
+		echo "<pre>";
+		print_r($results);
+		echo "<br>Node Values <br>";
 		foreach($results as $result){
 			echo trim($result->nodeValue) . '<br>';
 			$array[] = $result;
@@ -84,12 +86,12 @@ class XPATH {
 
 		// if we get errors, let us know whyy
 		if (!$result) {
-						echo "<br />cURL error number:" .curl_errno($ch);
-						echo "<br />cURL error:" . curl_error($ch) . " on URL - " . $url;
-						var_dump(curl_getinfo($ch));
+			echo "<br />cURL error number:" .curl_errno($ch);
+			echo "<br />cURL error:" . curl_error($ch) . " on URL - " . $url;
+			var_dump(curl_getinfo($ch));
 			var_dump(curl_error($ch));
-						exit;
-				}
+			exit;
+		}
 		return $result;
 				
 	}
