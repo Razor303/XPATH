@@ -1,7 +1,7 @@
 XPATH
 =====
 
-*A simple wrapper for using Xpath with the DOMDocument and DOMXpath classes in php.* 
+*This class is from a video tutorial I did on youtube. It is very simple and should be built upon. I will keep this version the same as the video.* 
 
 ##Basic Example
 
@@ -36,7 +36,7 @@ __I dont usually link to w3fools but they have a nice Xpath syntax reference, ev
 * [Xpath syntax reference (w3schools)](http://www.w3schools.com/xpath/xpath_syntax.asp)
 * [More Xpath info on MDN](https://developer.mozilla.org/en-US/docs/XPath)
 
-Hope you find this class useful.
+Hope you find this useful.
 
 *-Nate Wiley*
 
